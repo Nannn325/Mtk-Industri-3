@@ -205,16 +205,16 @@ elif st.session_state.current_page == "Optimasi":
         col1, col2 = st.columns(2)
         with col1:
             st.subheader("Produk 1")
-            p1 = st.number_input("Keuntungan/unit (Rp)", 120000, key="p1")
-            t1 = st.number_input("Waktu produksi (jam)", 3, key="t1")
+            p1 = st.number_input("Keuntungan/unit (Rp)", 150000, key="p1")
+            t1 = st.number_input("Waktu produksi (jam)", 4, key="t1")
             max1 = st.number_input("Maksimal permintaan", 30, key="max1")
         with col2:
             st.subheader("Produk 2")
-            p2 = st.number_input("Keuntungan/unit (Rp)", 80000, key="p2")
-            t2 = st.number_input("Waktu produksi (jam)", 2, key="t2")
-            max2 = st.number_input("Maksimal permintaan", 40, key="max2")
+            p2 = st.number_input("Keuntungan/unit (Rp)", 100000, key="p2")
+            t2 = st.number_input("Waktu produksi (jam)", 3, key="t2")
+            max2 = st.number_input("Maksimal permintaan", 50, key="max2")
         
-        total_time = st.number_input("Total waktu tersedia (jam)", 120, key="total")
+        total_time = st.number_input("Total waktu tersedia (jam)", 160, key="total")
 
     if st.button("🧮 HITUNG SOLUSI DETAIL", type="primary", use_container_width=True):
         # Implementasi solusi
