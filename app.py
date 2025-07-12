@@ -154,13 +154,13 @@ elif st.session_state.current_page == "Optimasi":
     with st.expander("📚 Contoh Soal & Pembahasan", expanded=True):
         st.subheader("Studi Kasus: Perusahaan Furniture")
         st.markdown("""
-        **PT Kayu Indah** memproduksi:
-        - **Meja**: Keuntungan Rp120.000/unit, butuh 3 jam pengerjaan
-        - **Kursi**: Keuntungan Rp80.000/unit, butuh 2 jam pengerjaan
+        **PT Mebel Jaya** memproduksi:
+        - **Lemari**: Keuntungan Rp150.000/unit, butuh 2 jam pengerjaan
+        - **Rak Buku**: Keuntungan Rp100.000/unit, butuh 1 jam pengerjaan
         
         **Kendala:**
-        - Waktu produksi maksimal 120 jam/minggu
-        - Permintaan pasar maksimal 30 meja dan 40 kursi per minggu
+        - Waktu produksi maksimal 160 jam/minggu
+        - Permintaan pasar maksimal 20 lemari dan 50 rak buku per minggu
         """)
         
         if st.button("💡 Lihat Solusi Contoh", type="secondary"):
