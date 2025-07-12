@@ -155,12 +155,12 @@ elif st.session_state.current_page == "Optimasi":
         st.subheader("Studi Kasus: Perusahaan Furniture")
         st.markdown("""
         **PT Mebel Jaya** memproduksi:
-        - **Lemari**: Keuntungan Rp150.000/unit, butuh 2 jam pengerjaan
-        - **Rak Buku**: Keuntungan Rp100.000/unit, butuh 1 jam pengerjaan
+        - **Lemari**: Keuntungan Rp150.000/unit, butuh 4 jam pengerjaan
+        - **Rak Buku**: Keuntungan Rp100.000/unit, butuh 3 jam pengerjaan
         
         **Kendala:**
         - Waktu produksi maksimal 160 jam/minggu
-        - Permintaan pasar maksimal 20 lemari dan 50 rak buku per minggu
+        - Permintaan pasar maksimal 30 lemari dan 50 rak buku per minggu
         """)
         
         if st.button("💡 Lihat Solusi Contoh", type="secondary"):
@@ -171,10 +171,10 @@ elif st.session_state.current_page == "Optimasi":
             with cols[0]:
                 st.latex(r"""
                 \begin{aligned}
-                \text{Maksimalkan } & Z = 120000x_1 + 80000x_2 \\
-                \text{Dengan kendala: } & 3x_1 + 2x_2 \leq 120 \\
+                \text{Maksimalkan } & Z = 150000x_1 + 100000x_2 \\
+                \text{Dengan kendala: } & 4x_1 + 3x_2 \leq 160 \\
                 & x_1 \leq 30 \\
-                & x_2 \leq 40 \\
+                & x_2 \leq 50 \\
                 & x_1 \geq 0, x_2 \geq 0
                 \end{aligned}
                 """)
@@ -182,9 +182,9 @@ elif st.session_state.current_page == "Optimasi":
             with cols[1]:
                 st.markdown("""
                 **Solusi Optimal:**
-                - Produksi 30 meja
-                - Produksi 15 kursi
-                - Keuntungan maksimum: Rp4.800.000/minggu
+                - Produksi 30 lemari
+                - Produksi 13 kursi
+                - Keuntungan maksimum: Rp5.833.000/minggu
                 """)
             
             fig, ax = plt.subplots(figsize=(10,6))
