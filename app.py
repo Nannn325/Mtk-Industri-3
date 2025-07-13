@@ -152,7 +152,7 @@ elif st.session_state.current_page == "Optimasi":
     st.title("📈 OPTIMASI PRODUKSI")
     
     with st.expander("📚 Contoh Soal & Pembahasan", expanded=True):
-        st.subheader("Studi Kasus: Perusahaan Furniture")
+        st.subheader("Studi Kasus: Perusahaan Pengrajin Kayu")
         st.markdown("""
         **PT Mebel Jaya** memproduksi:
         - **Lemari**: Keuntungan Rp150.000/unit, butuh 4 jam pengerjaan
